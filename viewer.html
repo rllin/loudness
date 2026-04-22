@@ -171,6 +171,7 @@
     .item.level-moderate { border-left-color: #d4b84a; }
     .item.level-loud { border-left-color: #cf8b5a; }
     .item.level-very-loud { border-left-color: #c46b6b; }
+    .item.level-unknown { border-left-color: #ccc; }
     
     .item-name {
       font-size: 0.8rem;
@@ -216,6 +217,7 @@
     .item.level-moderate .item-dots { color: #d4b84a; }
     .item.level-loud .item-dots { color: #cf8b5a; }
     .item.level-very-loud .item-dots { color: #c46b6b; }
+    .item.level-unknown .item-dots { color: #bbb; }
     
     .legend {
       display: flex;
@@ -338,7 +340,8 @@
       moderate_noise: '▁▃',
       average: '▁▃',
       loud: '▁▃▅',
-      very_loud: '▁▃▅▇'
+      very_loud: '▁▃▅▇',
+      unknown: '?'
     };
     
     async function loadData() {
@@ -370,7 +373,7 @@
           obj[h] = values[i] || '';
         });
         return obj;
-      }).filter(d => d.alias && d.noise_level && !d.error);
+      }).filter(d => d.alias && !d.error);
       
       render();
     }
@@ -405,7 +408,7 @@
         filtered = filtered.filter(d => d.rating && parseFloat(d.rating) >= minRating);
       }
       
-      // Sort: rating (high→low), price (expensive→cheap), noise (quiet→loud), alpha
+      // Sort: rating (high→low), price (expensive→cheap), noise (quiet→loud, unknown last), alpha
       const noiseOrder = { quiet: 0, moderate_noise: 1, average: 1, loud: 2, very_loud: 3 };
       const priceOrder = { '$$$$': 0, '$$$': 1, '$$': 2, '$': 3, '-': 4, '': 5 };
       filtered.sort((a, b) => {
@@ -417,9 +420,9 @@
         const priceA = priceOrder[a.price] ?? 5;
         const priceB = priceOrder[b.price] ?? 5;
         if (priceA !== priceB) return priceA - priceB;
-        // Noise: quietest first
-        const noiseA = noiseOrder[a.noise_level] ?? 2;
-        const noiseB = noiseOrder[b.noise_level] ?? 2;
+        // Noise: quietest first, unknown (no noise_level) last
+        const noiseA = noiseOrder[a.noise_level] ?? 99;
+        const noiseB = noiseOrder[b.noise_level] ?? 99;
         if (noiseA !== noiseB) return noiseA - noiseB;
         // Alphabetical
         return (a.name || a.alias).localeCompare(b.name || b.alias);
@@ -434,11 +437,12 @@
       
       grid.innerHTML = filtered.map(d => {
         const name = d.name || d.alias.replace(/-/g, ' ');
-        const dot = dots[d.noise_level] || '· ·';
+        const dot = dots[d.noise_level] || dots.unknown;
         const yelpUrl = `https://www.yelp.com/biz/${d.alias}`;
         const levelClass = d.noise_level === 'quiet' ? 'quiet' :
                           d.noise_level === 'very_loud' ? 'very-loud' :
-                          d.noise_level === 'loud' ? 'loud' : 'moderate';
+                          d.noise_level === 'loud' ? 'loud' :
+                          d.noise_level ? 'moderate' : 'unknown';
         const price = d.price || '';
         const rating = d.rating ? `★${d.rating}` : '';
         
