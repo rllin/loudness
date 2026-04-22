@@ -408,10 +408,14 @@
         filtered = filtered.filter(d => d.rating && parseFloat(d.rating) >= minRating);
       }
       
-      // Sort: rating (high→low), price (expensive→cheap), noise (quiet→loud, unknown last), alpha
+      // Sort: unknown noise last, then rating (high→low), price (expensive→cheap), noise (quiet→loud), alpha
       const noiseOrder = { quiet: 0, moderate_noise: 1, average: 1, loud: 2, very_loud: 3 };
       const priceOrder = { '$$$$': 0, '$$$': 1, '$$': 2, '$': 3, '-': 4, '': 5 };
       filtered.sort((a, b) => {
+        // Unknown noise level goes to bottom regardless of other fields
+        const hasNoiseA = a.noise_level ? 0 : 1;
+        const hasNoiseB = b.noise_level ? 0 : 1;
+        if (hasNoiseA !== hasNoiseB) return hasNoiseA - hasNoiseB;
         // Rating: highest first
         const ratingA = parseFloat(a.rating) || 0;
         const ratingB = parseFloat(b.rating) || 0;
@@ -420,7 +424,7 @@
         const priceA = priceOrder[a.price] ?? 5;
         const priceB = priceOrder[b.price] ?? 5;
         if (priceA !== priceB) return priceA - priceB;
-        // Noise: quietest first, unknown (no noise_level) last
+        // Noise: quietest first
         const noiseA = noiseOrder[a.noise_level] ?? 99;
         const noiseB = noiseOrder[b.noise_level] ?? 99;
         if (noiseA !== noiseB) return noiseA - noiseB;
