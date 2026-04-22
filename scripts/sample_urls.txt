@@ -1,0 +1,8 @@
+# Sample Yelp restaurant URLs for testing
+# Add your own URLs from searching restaurants in your target city
+
+https://www.yelp.com/biz/garaje-san-francisco
+https://www.yelp.com/biz/house-of-prime-rib-san-francisco
+https://www.yelp.com/biz/tartine-bakery-san-francisco
+https://www.yelp.com/biz/zuni-cafe-san-francisco
+https://www.yelp.com/biz/swan-oyster-depot-san-francisco
