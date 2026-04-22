@@ -68,6 +68,52 @@ def load_existing_results(path: Path) -> dict[str, Restaurant]:
     return results
 
 
+def is_hash_alias(alias: str) -> bool:
+    """Check if alias is a hash (22 char base64-ish) vs readable name."""
+    return bool(re.match(r'^[A-Za-z0-9_-]{22}$', alias))
+
+
+def dedupe_by_name(results: dict[str, Restaurant]) -> dict[str, Restaurant]:
+    """Deduplicate restaurants by name, keeping readable alias over hash."""
+    by_name: dict[str, list[Restaurant]] = {}
+    no_name: list[Restaurant] = []
+    
+    for r in results.values():
+        if r.name:
+            by_name.setdefault(r.name.lower(), []).append(r)
+        else:
+            no_name.append(r)
+    
+    deduped: dict[str, Restaurant] = {}
+    removed = 0
+    
+    for name, group in by_name.items():
+        if len(group) == 1:
+            deduped[group[0].alias] = group[0]
+        else:
+            # Sort: prefer readable alias, then by data completeness
+            def score(r: Restaurant) -> int:
+                s = 0
+                if not is_hash_alias(r.alias):
+                    s += 100
+                if r.noise_level:
+                    s += 10
+                return s
+            
+            group.sort(key=score, reverse=True)
+            deduped[group[0].alias] = group[0]
+            removed += len(group) - 1
+    
+    # Add ones without names (can't dedupe)
+    for r in no_name:
+        deduped[r.alias] = r
+    
+    if removed:
+        print(f"Deduped: removed {removed} duplicate restaurants")
+    
+    return deduped
+
+
 def save_results(path: Path, results: dict[str, Restaurant]) -> None:
     """Save all results to CSV file."""
     with open(path, "w", newline="") as f:
@@ -270,6 +316,8 @@ async def scrape_city(
     # Load existing results
     existing = load_existing_results(output_path)
     existing_aliases = set(existing.keys())
+    # Track names to avoid duplicates (same restaurant, different alias)
+    existing_names = {r.name.lower() for r in existing.values() if r.name}
     stats.already_scraped = len(existing)
     
     if existing:
@@ -383,6 +431,9 @@ async def scrape_city(
                 stats.errors += 1
             elif r.noise_level:
                 stats.with_noise += 1
+        
+        # Deduplicate by name (keep readable alias over hash)
+        results = dedupe_by_name(results)
         
         # Final save
         save_results(output_path, results)

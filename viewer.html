@@ -74,6 +74,22 @@
       background: rgba(139, 157, 131, 0.05);
     }
     
+    .filter-btn.noise-quiet { color: #7cb380; }
+    .filter-btn.noise-moderate { color: #d4b84a; }
+    .filter-btn.noise-loud { color: #cf8b5a; }
+    .filter-btn.noise-very-loud { color: #c46b6b; }
+    
+    .filter-btn.noise-quiet.active { border-color: #7cb380; background: rgba(124, 179, 128, 0.1); }
+    .filter-btn.noise-moderate.active { border-color: #d4b84a; background: rgba(212, 184, 74, 0.1); }
+    .filter-btn.noise-loud.active { border-color: #cf8b5a; background: rgba(207, 139, 90, 0.1); }
+    .filter-btn.noise-very-loud.active { border-color: #c46b6b; background: rgba(196, 107, 107, 0.1); }
+    
+    .filter-btn.price-btn { color: #7a9a6a; }
+    .filter-btn.price-btn.active { border-color: #7a9a6a; color: #7a9a6a; background: rgba(122, 154, 106, 0.1); }
+    
+    .filter-btn.rating-btn { color: #b8a040; }
+    .filter-btn.rating-btn.active { border-color: #b8a040; color: #b8a040; background: rgba(184, 160, 64, 0.1); }
+    
     .filter-group {
       display: flex;
       align-items: center;
@@ -267,26 +283,26 @@
       <div class="filter-group">
         <span class="filter-label">noise</span>
         <button class="filter-btn active" data-filter="all">any</button>
-        <button class="filter-btn" data-filter="quiet">▁</button>
-        <button class="filter-btn" data-filter="moderate_noise">▁▃</button>
-        <button class="filter-btn" data-filter="loud">▁▃▅</button>
-        <button class="filter-btn" data-filter="very_loud">▁▃▅▇</button>
+        <button class="filter-btn noise-quiet" data-filter="quiet">▁</button>
+        <button class="filter-btn noise-moderate" data-filter="moderate_noise">▁▃</button>
+        <button class="filter-btn noise-loud" data-filter="loud">▁▃▅</button>
+        <button class="filter-btn noise-very-loud" data-filter="very_loud">▁▃▅▇</button>
       </div>
       <div class="filter-group">
         <span class="filter-label">price</span>
         <button class="filter-btn active" data-price="">any</button>
-        <button class="filter-btn" data-price="$">$</button>
-        <button class="filter-btn" data-price="$$">$$</button>
-        <button class="filter-btn" data-price="$$$">$$$</button>
-        <button class="filter-btn" data-price="$$$$">$$$$</button>
+        <button class="filter-btn price-btn" data-price="$">$</button>
+        <button class="filter-btn price-btn" data-price="$$">$$</button>
+        <button class="filter-btn price-btn" data-price="$$$">$$$</button>
+        <button class="filter-btn price-btn" data-price="$$$$">$$$$</button>
       </div>
       <div class="filter-group">
         <span class="filter-label">rating</span>
         <button class="filter-btn active" data-rating="">any</button>
-        <button class="filter-btn" data-rating="3">3+</button>
-        <button class="filter-btn" data-rating="3.5">3.5+</button>
-        <button class="filter-btn" data-rating="4">4+</button>
-        <button class="filter-btn" data-rating="4.5">4.5+</button>
+        <button class="filter-btn rating-btn" data-rating="3">3+</button>
+        <button class="filter-btn rating-btn" data-rating="3.5">3.5+</button>
+        <button class="filter-btn rating-btn" data-rating="4">4+</button>
+        <button class="filter-btn rating-btn" data-rating="4.5">4.5+</button>
       </div>
     </div>
     
