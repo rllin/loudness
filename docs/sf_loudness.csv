@@ -1,24 +1,15 @@
 alias,name,noise_level,price,rating,url,scraped_at,error
--ll5zMoJ-WXrUPWHwATZmA, Ll5Zmoj Wxrupwhwatzma,,,,https://www.yelp.com/biz/-ll5zMoJ-WXrUPWHwATZmA,,Failed to fetch
-0V6h6rTiOZnHFN-qj_-iyw,0V6H6Rtioznhfn Qj_ Iyw,,-,4.0,https://www.yelp.com/biz/0V6h6rTiOZnHFN-qj_-iyw,2026-04-22T07:11:48.754431+00:00,
-0wqsFH-Z_Chg3O6N-d0PAg,0Wqsfh Z_Chg3O6N D0Pag,moderate_noise,$$$,5.0,https://www.yelp.com/biz/0wqsFH-Z_Chg3O6N-d0PAg,2026-04-22T06:49:07.656619+00:00,
-0YPcBWiU-8t2kGe-DOhW5g,0Ypcbwiu 8T2Kge Dohw5G,,,,https://www.yelp.com/biz/0YPcBWiU-8t2kGe-DOhW5g,,Failed to fetch
 101-eatery-south-san-francisco-2,101 Eatery,,-,5.0,https://www.yelp.com/biz/101-eatery-south-san-francisco-2,2026-04-22T07:14:13.845830+00:00,
 1601-bar-and-kitchen-san-francisco,1601 Bar And Kitchen,moderate_noise,$$$,5.0,https://www.yelp.com/biz/1601-bar-and-kitchen-san-francisco,2026-04-22T07:13:57.748678+00:00,
 16th-street-diner-san-francisco,16Th Street Diner,,-,5.0,https://www.yelp.com/biz/16th-street-diner-san-francisco,2026-04-22T06:50:02.693244+00:00,
 20-spot-san-francisco,20 Spot,moderate_noise,-,5.0,https://www.yelp.com/biz/20-spot-san-francisco,2026-04-22T07:31:45.300701+00:00,
-2E9O-p-lp587aOMnpLepkQ,2E9O P Lp587Aomnplepkq,,,,https://www.yelp.com/biz/2E9O-p-lp587aOMnpLepkQ,,Failed to fetch
 3rd-cousin-san-francisco-2,3Rd Cousin,moderate_noise,$$$$,5.0,https://www.yelp.com/biz/3rd-cousin-san-francisco-2,2026-04-22T06:46:16.567682+00:00,
 54-mint-cucina-romana-san-francisco,54 Mint Cucina Romana,moderate_noise,$$$,4.0,https://www.yelp.com/biz/54-mint-cucina-romana-san-francisco,2026-04-22T06:49:34.963284+00:00,
-5D--FJXQHdC3kZWYm2GREg,5D  Fjxqhdc3Kzwym2Greg,moderate_noise,$$$,5.0,https://www.yelp.com/biz/5D--FJXQHdC3kZWYm2GREg,2026-04-22T06:14:20.083065,
 606-san-francisco-2,606,moderate_noise,$$,5.0,https://www.yelp.com/biz/606-san-francisco-2,2026-04-22T06:18:34.185382,
 7-adams-san-francisco-3,7 Adams,moderate_noise,$$$$,5.0,https://www.yelp.com/biz/7-adams-san-francisco-3,2026-04-22T06:47:29.315311+00:00,
-88sMT7-Ob5S-Fu-EyO9U5w,88Smt7 Ob5S Fu Eyo9U5W,moderate_noise,-,5.0,https://www.yelp.com/biz/88sMT7-Ob5S-Fu-EyO9U5w,2026-04-22T07:28:51.929088+00:00,
-_y_qSPhH--Ji5hT-YOPCfA,_Y_Qsphh  Ji5Ht Yopcfa,,-,5.0,https://www.yelp.com/biz/_y_qSPhH--Ji5hT-YOPCfA,2026-04-22T06:35:14.232319+00:00,
 XhJ6ZYagcWNHpJ1H1KvNlQ,A Mano,moderate_noise,$$$,5.0,https://www.yelp.com/biz/XhJ6ZYagcWNHpJ1H1KvNlQ,2026-04-22T06:48:48.149487+00:00,
 a16-san-francisco-4,A16,moderate_noise,$$$,4.0,https://www.yelp.com/biz/a16-san-francisco-4,2026-04-22T07:12:15.021647+00:00,
 aaha-indian-cuisine-san-francisco,Aaha Indian Cuisine,,$$,5.0,https://www.yelp.com/biz/aaha-indian-cuisine-san-francisco,2026-04-22T07:31:52.906319+00:00,
-abac,,,,,https://www.yelp.com/biz/abac,,Failed to fetch
 abrazo-san-francisco-2,Abrazo,moderate_noise,-,5.0,https://www.yelp.com/biz/abrazo-san-francisco-2,2026-04-22T06:31:46.576738+00:00,
 absinthe-brasserie-and-bar-san-francisco-2,Absinthe Brasserie And Bar,moderate_noise,$$$,4.0,https://www.yelp.com/biz/absinthe-brasserie-and-bar-san-francisco-2,2026-04-22T06:48:55.941609+00:00,
 abu-salim-middle-eastern-grill-san-francisco-2,Abu Salim Middle Eastern Grill,moderate_noise,-,5.0,https://www.yelp.com/biz/abu-salim-middle-eastern-grill-san-francisco-2,2026-04-22T07:15:16.517774+00:00,
@@ -141,7 +132,6 @@ buena-vida-cantina-san-francisco,Buena Vida Cantina,moderate_noise,$$,5.0,https:
 bunny-cafe-san-francisco-2,Bunny Cafe,,-,5.0,https://www.yelp.com/biz/bunny-cafe-san-francisco-2,2026-04-22T06:49:48.104306+00:00,
 burma-love-san-francisco-10,Burma Love,,,,https://www.yelp.com/biz/burma-love-san-francisco-10,,Failed to fetch
 bursa-san-francisco,Bursa,,,,https://www.yelp.com/biz/bursa-san-francisco,,Failed to fetch
-cach,,,,,https://www.yelp.com/biz/cach,,Failed to fetch
 3LkA8q9hM8afDOsAkaZWpA,Caché,,$$$,5.0,https://www.yelp.com/biz/3LkA8q9hM8afDOsAkaZWpA,2026-04-22T06:48:56.955405+00:00,
 cafe-alma-san-francisco,Cafe Alma,,,,https://www.yelp.com/biz/cafe-alma-san-francisco,,Failed to fetch
 cafe-de-casa-san-francisco-5,Cafe De Casa,moderate_noise,$$,4.0,https://www.yelp.com/biz/cafe-de-casa-san-francisco-5,2026-04-22T07:14:49.120210+00:00,
@@ -175,11 +165,9 @@ cholita-linda-san-francisco-4,Cholita Linda,,,,https://www.yelp.com/biz/cholita-
 chome-san-francisco-3,Chome,moderate_noise,-,4.0,https://www.yelp.com/biz/chome-san-francisco-3,2026-04-22T06:36:37.202326+00:00,
 chotto-matte-san-francisco-san-francisco,Chotto Matte,,-,5.0,https://www.yelp.com/biz/chotto-matte-san-francisco-san-francisco,2026-04-22T07:13:03.339424+00:00,
 chouchou-french-bistro-san-francisco,Chouchou French Bistro,moderate_noise,-,4.0,https://www.yelp.com/biz/chouchou-french-bistro-san-francisco,2026-04-22T07:11:18.150887+00:00,
-Ci1546e-M3L-rkEL1Dq06w,Ci1546E M3L Rkel1Dq06W,,-,5.0,https://www.yelp.com/biz/Ci1546e-M3L-rkEL1Dq06w,2026-04-22T06:50:11.847234+00:00,
 city-cruises-san-francisco-san-francisco-2,City Cruises,moderate_noise,$$$$,5.0,https://www.yelp.com/biz/city-cruises-san-francisco-san-francisco-2,2026-04-22T06:48:33.572283+00:00,
 clementina-san-francisco-2,Clementina,,-,5.0,https://www.yelp.com/biz/clementina-san-francisco-2,2026-04-22T06:14:06.570971,
 LIAMsumyQbaubYLFynXoZA,Cocina Mamá Cholita,,-,5.0,https://www.yelp.com/biz/LIAMsumyQbaubYLFynXoZA,2026-04-22T06:42:49.384200+00:00,
-cocina-mam,,,,,https://www.yelp.com/biz/cocina-mam,,Failed to fetch
 cocobang-san-francisco,Cocobang,loud,-,4.0,https://www.yelp.com/biz/cocobang-san-francisco,2026-04-22T07:23:32.536832+00:00,
 cole-valley-tavern-san-francisco,Cole Valley Tavern,,,,https://www.yelp.com/biz/cole-valley-tavern-san-francisco,,Failed to fetch
 colibri-mexican-bistro-san-francisco,Colibri Mexican Bistro,moderate_noise,$$$,4.0,https://www.yelp.com/biz/colibri-mexican-bistro-san-francisco,2026-04-22T07:13:36.924384+00:00,
@@ -202,7 +190,6 @@ cultivar-san-francisco-san-francisco-3,Cultivar,moderate_noise,$$,5.0,https://ww
 curio-san-francisco,Curio,moderate_noise,-,4.0,https://www.yelp.com/biz/curio-san-francisco,2026-04-22T07:23:28.080910+00:00,
 curry-hyuga-san-francisco,Curry Hyuga,moderate_noise,$$,5.0,https://www.yelp.com/biz/curry-hyuga-san-francisco,2026-04-22T07:14:20.662832+00:00,
 curry-pizza-house-south-san-francisco-2,Curry Pizza House,,,,https://www.yelp.com/biz/curry-pizza-house-south-san-francisco-2,,Failed to fetch
-d5752S,,,,,https://www.yelp.com/biz/d5752S,,Failed to fetch
 da-flora-a-venetian-osteria-san-francisco,Da Flora A Venetian Osteria,moderate_noise,$$$,4.0,https://www.yelp.com/biz/da-flora-a-venetian-osteria-san-francisco,2026-04-22T07:12:07.650446+00:00,
 dabao-singapore-san-francisco,Dabao Singapore,,-,5.0,https://www.yelp.com/biz/dabao-singapore-san-francisco,2026-04-22T06:37:29.589481+00:00,
 dacha-kitchen-and-bar-san-francisco-3,Dacha Kitchen And Bar,,-,5.0,https://www.yelp.com/biz/dacha-kitchen-and-bar-san-francisco-3,2026-04-22T06:28:01.068971+00:00,
@@ -212,7 +199,6 @@ dalida-san-francisco-2,Dalida,moderate_noise,-,5.0,https://www.yelp.com/biz/dali
 daly-buffet-daly-city,Daly Buffet Daly City,loud,$$$,4.0,https://www.yelp.com/biz/daly-buffet-daly-city,2026-04-22T07:12:19.522539+00:00,
 dancing-yak-san-francisco-10,Dancing Yak,moderate_noise,-,5.0,https://www.yelp.com/biz/dancing-yak-san-francisco-10,2026-04-22T07:28:56.773691+00:00,
 dash-san-francisco-4,Dash,,-,4.0,https://www.yelp.com/biz/dash-san-francisco-4,2026-04-22T07:15:11.636691+00:00,
-dC_kA-R2qb-0iEmoI4VKPg,Dc_Ka R2Qb 0Iemoi4Vkpg,moderate_noise,-,5.0,https://www.yelp.com/biz/dC_kA-R2qb-0iEmoI4VKPg,2026-04-22T07:11:26.908310+00:00,
 del-popolo-san-francisco-3,Del Popolo,loud,$$,5.0,https://www.yelp.com/biz/del-popolo-san-francisco-3,2026-04-22T07:23:30.839895+00:00,
 delam-san-francisco,Delam,,-,5.0,https://www.yelp.com/biz/delam-san-francisco,2026-04-22T06:36:11.454807+00:00,
 delfina-san-francisco,Delfina,moderate_noise,$$$,5.0,https://www.yelp.com/biz/delfina-san-francisco,2026-04-22T06:49:18.208895+00:00,
@@ -242,9 +228,6 @@ dumpling-story-san-francisco-3,Dumpling Story,moderate_noise,$$,5.0,https://www.
 dumpling-time-san-francisco,Dumpling Time,moderate_noise,-,4.0,https://www.yelp.com/biz/dumpling-time-san-francisco,2026-04-22T07:28:30.993799+00:00,
 dumpling-time-thrive-city-san-francisco-2,Dumpling Time Thrive City,,,,https://www.yelp.com/biz/dumpling-time-thrive-city-san-francisco-2,,Failed to fetch
 dynasty-dumpling-san-francisco-2,Dynasty Dumpling,,,,https://www.yelp.com/biz/dynasty-dumpling-san-francisco-2,,Failed to fetch
-e-DRL-yR1aiREyfOs4jxwA,E Drl Yr1Aireyfos4Jxwa,,-,5.0,https://www.yelp.com/biz/e-DRL-yR1aiREyfOs4jxwA,2026-04-22T06:50:21.825825+00:00,
-e2aA95s3lbjHu4jza-l-eA,E2Aa95S3Lbjhu4Jza L Ea,moderate_noise,-,4.0,https://www.yelp.com/biz/e2aA95s3lbjHu4jza-l-eA,2026-04-22T06:49:19.410346+00:00,
-e5a-OMt-3yIbQIsfkvJpEg,E5A Omt 3Yibqisfkvjpeg,,$$,5.0,https://www.yelp.com/biz/e5a-OMt-3yIbQIsfkvJpEg,2026-04-22T07:32:04.088878+00:00,
 eagle-cafe-san-francisco-6,Eagle Cafe,moderate_noise,-,5.0,https://www.yelp.com/biz/eagle-cafe-san-francisco-6,2026-04-22T07:23:47.065407+00:00,
 early-to-rise-san-francisco-2,Early To Rise,moderate_noise,$$,3.0,https://www.yelp.com/biz/early-to-rise-san-francisco-2,2026-04-22T07:23:30.757015+00:00,
 eats-san-francisco,Eats,moderate_noise,$$,4.0,https://www.yelp.com/biz/eats-san-francisco,2026-04-22T07:23:33.833989+00:00,
@@ -263,11 +246,9 @@ epic-steak-san-francisco,Epic Steak,moderate_noise,$$$$,4.0,https://www.yelp.com
 equal-parts-san-francisco-4,Equal Parts,,-,4.0,https://www.yelp.com/biz/equal-parts-san-francisco-4,2026-04-22T06:38:05.628053+00:00,
 ernest-san-francisco,Ernest,moderate_noise,-,4.0,https://www.yelp.com/biz/ernest-san-francisco,2026-04-22T06:17:23.159838,
 espetus-churrascaria-san-francisco-3,Espetus Churrascaria,moderate_noise,-,5.0,https://www.yelp.com/biz/espetus-churrascaria-san-francisco-3,2026-04-22T06:46:17.813810+00:00,
-F7UZBVdp69mTI,,,,,https://www.yelp.com/biz/F7UZBVdp69mTI,,Failed to fetch
 fable-san-francisco,Fable,moderate_noise,-,4.0,https://www.yelp.com/biz/fable-san-francisco,2026-04-22T06:18:04.465237,
 falafelland-san-francisco-7,Falafelland,,-,5.0,https://www.yelp.com/biz/falafelland-san-francisco-7,2026-04-22T06:50:01.803153+00:00,
 falasteen-san-francisco,Falasteen,,-,5.0,https://www.yelp.com/biz/falasteen-san-francisco,2026-04-22T06:20:42.609213,
-farley-sausalito,,moderate_noise,-,5.0,https://www.yelp.com/biz/farley-sausalito,2026-04-22T07:11:35.598098+00:00,
 farmhouse-kitchen-thai-cuisine-san-francisco,Farmhouse Kitchen Thai Cuisine,moderate_noise,-,3.0,https://www.yelp.com/biz/farmhouse-kitchen-thai-cuisine-san-francisco,2026-04-22T06:49:25.851723+00:00,
 fermentation-lab-san-francisco-3,Fermentation Lab,moderate_noise,-,5.0,https://www.yelp.com/biz/fermentation-lab-san-francisco-3,2026-04-22T06:42:06.742599+00:00,
 fiery-hot-pot-and-grill-san-francisco,Fiery Hot Pot And Grill,moderate_noise,-,5.0,https://www.yelp.com/biz/fiery-hot-pot-and-grill-san-francisco,2026-04-22T07:12:09.901656+00:00,
@@ -280,7 +261,6 @@ fiorella-polk-san-francisco,Fiorella Polk,,,,https://www.yelp.com/biz/fiorella-p
 fiorella-sunset-san-francisco-3,Fiorella Sunset,moderate_noise,-,5.0,https://www.yelp.com/biz/fiorella-sunset-san-francisco-3,2026-04-22T06:48:43.730043+00:00,
 firefly-restaurant-san-francisco-4,Firefly Restaurant,moderate_noise,-,5.0,https://www.yelp.com/biz/firefly-restaurant-san-francisco-4,2026-04-22T06:35:20.750630+00:00,
 fish-in-the-box-san-francisco,Fish In The Box,moderate_noise,$$,5.0,https://www.yelp.com/biz/fish-in-the-box-san-francisco,2026-04-22T06:35:34.808158+00:00,
-fLd9bEYX-b-XmUDUKwBTfA,Fld9Beyx B Xmudukwbtfa,,,,https://www.yelp.com/biz/fLd9bEYX-b-XmUDUKwBTfA,,Failed to fetch
 flora-king-san-francisco-3,Flora King,,-,5.0,https://www.yelp.com/biz/flora-king-san-francisco-3,2026-04-22T06:27:00.138281+00:00,
 florio-bar-and-cafe-san-francisco,Florio Bar And Cafe,moderate_noise,-,4.0,https://www.yelp.com/biz/florio-bar-and-cafe-san-francisco,2026-04-22T07:14:04.417645+00:00,
 flour-water-san-francisco,Flour Water,loud,-,4.0,https://www.yelp.com/biz/flour-water-san-francisco,2026-04-22T07:13:07.328603+00:00,
@@ -388,7 +368,6 @@ jollof-kitchen-oakland-4,Jollof Kitchen Oakland 4,,-,5.0,https://www.yelp.com/bi
 joujou-san-francisco,Joujou,,-,5.0,https://www.yelp.com/biz/joujou-san-francisco,2026-04-22T06:16:18.852490,
 jt-restaurant-san-francisco,Jt Restaurant,quiet,-,5.0,https://www.yelp.com/biz/jt-restaurant-san-francisco,2026-04-22T07:14:22.649671+00:00,
 jungdon-katsu-emeryville,Jungdon Katsu Emeryville,moderate_noise,-,5.0,https://www.yelp.com/biz/jungdon-katsu-emeryville,2026-04-22T06:50:29.653996+00:00,
-jYSVfNGkkO9SOdYmcLot,,,,,https://www.yelp.com/biz/jYSVfNGkkO9SOdYmcLot,,Failed to fetch
 TZj0U5_l8_DggVO9-z5wOA,K Dragon,,$$,4.0,https://www.yelp.com/biz/TZj0U5_l8_DggVO9-z5wOA,2026-04-22T07:31:35.281947+00:00,
 k-minamoto-san-francisco-2,K Minamoto,quiet,-,5.0,https://www.yelp.com/biz/k-minamoto-san-francisco-2,2026-04-22T07:12:45.165652+00:00,
 k-soul-chicken-san-francisco-3,K Soul Chicken,,$$,5.0,https://www.yelp.com/biz/k-soul-chicken-san-francisco-3,2026-04-22T07:31:29.675527+00:00,
@@ -429,8 +408,6 @@ la-linda-san-francisco,La Linda,,-,5.0,https://www.yelp.com/biz/la-linda-san-fra
 la-mar-san-francisco-4,La Mar,moderate_noise,-,4.0,https://www.yelp.com/biz/la-mar-san-francisco-4,2026-04-22T06:49:38.656408+00:00,
 la-mediterranee-san-francisco-7,La Mediterranee,,,,https://www.yelp.com/biz/la-mediterranee-san-francisco-7,,Failed to fetch
 KKBBekDW-TQK8tam_6dn7w,La OaxaqueñA,moderate_noise,$,4.0,https://www.yelp.com/biz/KKBBekDW-TQK8tam_6dn7w,2026-04-22T06:41:59.061663+00:00,
-la-oaxaque,,,,,https://www.yelp.com/biz/la-oaxaque,,Failed to fetch
-la-soci,,,,,https://www.yelp.com/biz/la-soci,,Failed to fetch
 laotable-san-francisco,Laotable,loud,$$$,3.0,https://www.yelp.com/biz/laotable-san-francisco,2026-04-22T06:49:18.058706+00:00,
 laowai-noodles-daly-city,Laowai Noodles Daly City,,-,5.0,https://www.yelp.com/biz/laowai-noodles-daly-city,2026-04-22T06:50:37.582920+00:00,
 lapisara-eatery-san-francisco-2,Lapisara Eatery,,,,https://www.yelp.com/biz/lapisara-eatery-san-francisco-2,,Failed to fetch
@@ -457,7 +434,6 @@ little-shucker-san-francisco,Little Shucker,moderate_noise,-,4.0,https://www.yel
 little-star-pizza-san-francisco-4,Little Star Pizza,moderate_noise,-,5.0,https://www.yelp.com/biz/little-star-pizza-san-francisco-4,2026-04-22T07:12:58.510510+00:00,
 lokma-san-francisco,Lokma,moderate_noise,-,5.0,https://www.yelp.com/biz/lokma-san-francisco,2026-04-22T07:25:09.078452+00:00,
 lolinda-san-francisco,Lolinda,loud,-,3.0,https://www.yelp.com/biz/lolinda-san-francisco,2026-04-22T06:18:01.410636,
-lolt,,,,,https://www.yelp.com/biz/lolt,,Failed to fetch
 byyx62608ozr3W-LEC2Tvg,Loltún Restaurant,,-,4.0,https://www.yelp.com/biz/byyx62608ozr3W-LEC2Tvg,2026-04-22T07:14:51.043879+00:00,
 lomo-libre-cantina-san-francisco-3,Lomo Libre Cantina,,,,https://www.yelp.com/biz/lomo-libre-cantina-san-francisco-3,,Failed to fetch
 loquat-san-francisco,Loquat,,$$,4.0,https://www.yelp.com/biz/loquat-san-francisco,2026-04-22T07:29:24.714037+00:00,
@@ -466,7 +442,6 @@ lost-resort-san-francisco,Lost Resort,,,,https://www.yelp.com/biz/lost-resort-sa
 lous-cafe-san-francisco,Lous Cafe,,,,https://www.yelp.com/biz/lous-cafe-san-francisco,,Failed to fetch
 lovejoys-tea-room-san-francisco,Lovejoys Tea Room,,,,https://www.yelp.com/biz/lovejoys-tea-room-san-francisco,,Failed to fetch
 lovely-s-san-francisco,Lovely S,,-,5.0,https://www.yelp.com/biz/lovely-s-san-francisco,2026-04-22T06:26:45.468382+00:00,
-ltjuu-CHvGHUEyj-KtjPhA,Ltjuu Chvghueyj Ktjpha,moderate_noise,-,5.0,https://www.yelp.com/biz/ltjuu-CHvGHUEyj-KtjPhA,2026-04-22T07:14:58.662131+00:00,
 lucindas-deli-and-more-san-francisco,Lucindas Deli And More,,-,4.0,https://www.yelp.com/biz/lucindas-deli-and-more-san-francisco,2026-04-22T07:14:43.494191+00:00,
 luckyrice-feast-san-francisco,Luckyrice Feast,loud,-,3.5,https://www.yelp.com/biz/luckyrice-feast-san-francisco,2026-04-22T06:48:31.686776+00:00,
 luisas-restaurant-san-francisco-6,Luisas Restaurant,,-,4.0,https://www.yelp.com/biz/luisas-restaurant-san-francisco-6,2026-04-22T06:50:33.547365+00:00,
@@ -504,7 +479,6 @@ mesoresto-daly-city,Mesoresto Daly City,,-,5.0,https://www.yelp.com/biz/mesorest
 mestiza-san-francisco,Mestiza,,$$,5.0,https://www.yelp.com/biz/mestiza-san-francisco,2026-04-22T06:28:19.018721+00:00,
 mezze-and-mooore-san-francisco-2,Mezze And Mooore,moderate_noise,-,5.0,https://www.yelp.com/biz/mezze-and-mooore-san-francisco-2,2026-04-22T06:39:29.488763+00:00,
 midtown-market-brisbane,Midtown Market Brisbane,,-,3.5,https://www.yelp.com/biz/midtown-market-brisbane,2026-04-22T07:11:45.660880+00:00,
-mijot,,,,,https://www.yelp.com/biz/mijot,,Failed to fetch
 miller-and-lux-san-francisco,Miller And Lux,moderate_noise,$$$$,3.0,https://www.yelp.com/biz/miller-and-lux-san-francisco,2026-04-22T06:46:57.009799+00:00,
 milos-meze-san-francisco,Milos Meze,moderate_noise,-,5.0,https://www.yelp.com/biz/milos-meze-san-francisco,2026-04-22T06:49:23.645067+00:00,
 milos-taverna-san-francisco,Milos Taverna,,-,5.0,https://www.yelp.com/biz/milos-taverna-san-francisco,2026-04-22T06:42:54.105973+00:00,
@@ -522,11 +496,8 @@ mortons-the-steakhouse-san-francisco,Mortons The Steakhouse,moderate_noise,-,4.0
 moshi-moshi-san-francisco,Moshi Moshi,moderate_noise,-,3.0,https://www.yelp.com/biz/moshi-moshi-san-francisco,2026-04-22T06:27:55.426993+00:00,
 HqTJ1kG1e-HHv3Bx5jHbjA,Movida,,-,5.0,https://www.yelp.com/biz/HqTJ1kG1e-HHv3Bx5jHbjA,2026-04-22T06:29:04.537549+00:00,
 moya-san-francisco,Moya,moderate_noise,-,5.0,https://www.yelp.com/biz/moya-san-francisco,2026-04-22T07:28:23.809712+00:00,
-mozzeria-alameda,,,-,3.0,https://www.yelp.com/biz/mozzeria-alameda,2026-04-22T07:15:43.469333+00:00,
 mr-pollo-san-francisco-3,Mr Pollo,moderate_noise,-,5.0,https://www.yelp.com/biz/mr-pollo-san-francisco-3,2026-04-22T07:13:20.168775+00:00,
 mumu-hot-pot-san-francisco,Mumu Hot Pot,moderate_noise,-,4.0,https://www.yelp.com/biz/mumu-hot-pot-san-francisco,2026-04-22T07:12:32.412315+00:00,
-mywv3T22jQqXlM7m0qALqA,,moderate_noise,-,5.0,https://www.yelp.com/biz/mywv3T22jQqXlM7m0qALqA,2026-04-22T06:49:47.925514+00:00,
-n-6o-ylamawkWq_fvA2lZA,N 6O Ylamawkwq_Fva2Lza,,$$$,3.5,https://www.yelp.com/biz/n-6o-ylamawkWq_fvA2lZA,2026-04-22T07:12:12.304659+00:00,
 naadam-san-francisco-2,Naadam,,-,5.0,https://www.yelp.com/biz/naadam-san-francisco-2,2026-04-22T07:31:59.347263+00:00,
 nafisas-table-san-francisco,Nafisas Table,,-,4.0,https://www.yelp.com/biz/nafisas-table-san-francisco,2026-04-22T06:50:13.548460+00:00,
 nar-doner-and-grill-san-francisco,Nar Doner And Grill,,,,https://www.yelp.com/biz/nar-doner-and-grill-san-francisco,,Failed to fetch
@@ -619,7 +590,6 @@ poached-san-francisco,Poached,,-,1.0,https://www.yelp.com/biz/poached-san-franci
 poboys-kitchen-san-francisco,Poboys Kitchen,moderate_noise,$$,5.0,https://www.yelp.com/biz/poboys-kitchen-san-francisco,2026-04-22T06:37:10.517177+00:00,
 poc-chuc-san-francisco,Poc Chuc,moderate_noise,-,5.0,https://www.yelp.com/biz/poc-chuc-san-francisco,2026-04-22T07:31:39.143814+00:00,
 poesia-san-francisco,Poesia,moderate_noise,-,5.0,https://www.yelp.com/biz/poesia-san-francisco,2026-04-22T06:36:47.627737+00:00,
-poesia-caf,,,,,https://www.yelp.com/biz/poesia-caf,,Failed to fetch
 popis-oysterette-san-francisco,Popis Oysterette,moderate_noise,$$$,4.0,https://www.yelp.com/biz/popis-oysterette-san-francisco,2026-04-22T07:12:48.015743+00:00,
 pork-store-cafe-san-francisco,Pork Store Cafe,,,,https://www.yelp.com/biz/pork-store-cafe-san-francisco,,Failed to fetch
 potato-meets-wing-san-francisco,Potato Meets Wing,,-,2.0,https://www.yelp.com/biz/potato-meets-wing-san-francisco,2026-04-22T06:27:13.438573+00:00,
@@ -636,7 +606,6 @@ qs-sandwich-shop-san-francisco,Qs Sandwich Shop,,-,5.0,https://www.yelp.com/biz/
 quack-house-san-francisco-4,Quack House,moderate_noise,$$,5.0,https://www.yelp.com/biz/quack-house-san-francisco-4,2026-04-22T07:15:50.154071+00:00,
 que-viet-san-francisco-2,Que Viet,quiet,-,4.0,https://www.yelp.com/biz/que-viet-san-francisco-2,2026-04-22T07:31:32.071833+00:00,
 quince-san-francisco,Quince,quiet,-,5.0,https://www.yelp.com/biz/quince-san-francisco,2026-04-22T06:47:07.866917+00:00,
-R2dAQ9UgOJSnjE--uOkOSQ,R2Daq9Ugojsnje  Uokosq,,,,https://www.yelp.com/biz/R2dAQ9UgOJSnjE--uOkOSQ,,Failed to fetch
 radhaus-san-francisco-4,Radhaus,,,,https://www.yelp.com/biz/radhaus-san-francisco-4,,Failed to fetch
 rasa-rasa-san-francisco-3,Rasa Rasa,,$$,5.0,https://www.yelp.com/biz/rasa-rasa-san-francisco-3,2026-04-22T07:15:12.587351+00:00,
 rasa-rasa-kitchen-san-francisco,Rasa Rasa Kitchen,moderate_noise,-,5.0,https://www.yelp.com/biz/rasa-rasa-kitchen-san-francisco,2026-04-22T06:32:28.003260+00:00,
@@ -649,7 +618,6 @@ rich-table-san-francisco,Rich Table,moderate_noise,$$$$,5.0,https://www.yelp.com
 rintaro-san-francisco-4,Rintaro,moderate_noise,-,2.0,https://www.yelp.com/biz/rintaro-san-francisco-4,2026-04-22T06:46:29.334342+00:00,
 rise-and-set-san-francisco,Rise And Set,,,,https://www.yelp.com/biz/rise-and-set-san-francisco,,Failed to fetch
 rise-over-run-san-francisco-2,Rise Over Run,moderate_noise,-,4.0,https://www.yelp.com/biz/rise-over-run-san-francisco-2,2026-04-22T06:26:26.469260+00:00,
-RjPKqHk,,,,,https://www.yelp.com/biz/RjPKqHk,,Failed to fetch
 roaming-goat-san-francisco,Roaming Goat,moderate_noise,-,4.0,https://www.yelp.com/biz/roaming-goat-san-francisco,2026-04-22T06:40:02.697242+00:00,
 robin-san-francisco,Robin,moderate_noise,-,5.0,https://www.yelp.com/biz/robin-san-francisco,2026-04-22T06:46:52.093262+00:00,
 rocket-sushi-san-francisco-2,Rocket Sushi,moderate_noise,-,5.0,https://www.yelp.com/biz/rocket-sushi-san-francisco-2,2026-04-22T07:15:16.330894+00:00,
@@ -662,7 +630,6 @@ routier-san-francisco,Routier,moderate_noise,-,5.0,https://www.yelp.com/biz/rout
 rt-rotisserie-san-francisco-2,Rt Rotisserie,,,,https://www.yelp.com/biz/rt-rotisserie-san-francisco-2,,Failed to fetch
 ruby-s-san-francisco,Ruby S,moderate_noise,$$,5.0,https://www.yelp.com/biz/ruby-s-san-francisco,2026-04-22T06:35:41.676907+00:00,
 russ-fam-kitchen-daly-city-2,Russ Fam Kitchen Daly City 2,moderate_noise,-,4.0,https://www.yelp.com/biz/russ-fam-kitchen-daly-city-2,2026-04-22T07:31:55.114282+00:00,
-s3jHbdf6MIg9u-MA07n-pQ,S3Jhbdf6Mig9U Ma07N Pq,,-,5.0,https://www.yelp.com/biz/s3jHbdf6MIg9u-MA07n-pQ,2026-04-22T07:15:24.244537+00:00,
 sababa-san-francisco,Sababa,,,,https://www.yelp.com/biz/sababa-san-francisco,,Failed to fetch
 saigonese-cafe-san-francisco,Saigonese Cafe,moderate_noise,-,5.0,https://www.yelp.com/biz/saigonese-cafe-san-francisco,2026-04-22T07:15:45.503968+00:00,
 saison-san-francisco-2,Saison,moderate_noise,-,4.0,https://www.yelp.com/biz/saison-san-francisco-2,2026-04-22T06:43:07.537621+00:00,
@@ -700,7 +667,6 @@ sf-grill-san-francisco-3,Sf Grill,,-,5.0,https://www.yelp.com/biz/sf-grill-san-f
 sf-kebab-san-francisco-4,Sf Kebab,,,,https://www.yelp.com/biz/sf-kebab-san-francisco-4,,Failed to fetch
 sforno-pizzeria-napoletana-san-francisco,Sforno Pizzeria Napoletana,,-,2.0,https://www.yelp.com/biz/sforno-pizzeria-napoletana-san-francisco,2026-04-22T07:15:09.961409+00:00,
 shabu-club-san-francisco,Shabu Club,moderate_noise,$$$,4.0,https://www.yelp.com/biz/shabu-club-san-francisco,2026-04-22T07:13:09.387221+00:00,
-shaking-crab-daly-city,Shaking Crab Daly City,moderate_noise,-,3.0,https://www.yelp.com/biz/shaking-crab-daly-city,2026-04-22T07:13:05.329212+00:00,
 shanghai-dumpling-king-san-francisco-4,Shanghai Dumpling King,moderate_noise,-,4.0,https://www.yelp.com/biz/shanghai-dumpling-king-san-francisco-4,2026-04-22T07:31:39.869554+00:00,
 shelbys-rooftop-lounge-san-francisco,Shelbys Rooftop Lounge,loud,$$$,5.0,https://www.yelp.com/biz/shelbys-rooftop-lounge-san-francisco,2026-04-22T06:29:50.369890+00:00,
 sherpa-house-san-francisco,Sherpa House,,-,5.0,https://www.yelp.com/biz/sherpa-house-san-francisco,2026-04-22T06:49:46.398657+00:00,
@@ -738,7 +704,6 @@ sunflower-potrero-hill-san-francisco-3,Sunflower Potrero Hill,moderate_noise,-,5
 sungho-san-francisco,Sungho,,-,5.0,https://www.yelp.com/biz/sungho-san-francisco,2026-04-22T07:15:55.359327+00:00,
 sunset29-bbq-san-francisco-2,Sunset29 Bbq,,-,5.0,https://www.yelp.com/biz/sunset29-bbq-san-francisco-2,2026-04-22T06:28:07.612683+00:00,
 super-mensch-san-francisco-2,Super Mensch,,$$$,4.0,https://www.yelp.com/biz/super-mensch-san-francisco-2,2026-04-22T07:13:05.599507+00:00,
-suppenk,,,,,https://www.yelp.com/biz/suppenk,,Failed to fetch
 DGyoVB9PdI9_jw0CNi_OPg,Suppenküche,loud,-,5.0,https://www.yelp.com/biz/DGyoVB9PdI9_jw0CNi_OPg,2026-04-22T06:34:46.013399+00:00,
 supreme-crab-seafood-buffet-san-francisco-13,Supreme Crab Seafood Buffet,moderate_noise,-,4.0,https://www.yelp.com/biz/supreme-crab-seafood-buffet-san-francisco-13,2026-04-22T06:49:11.021960+00:00,
 surisan-san-francisco,Surisan,moderate_noise,$$,5.0,https://www.yelp.com/biz/surisan-san-francisco,2026-04-22T06:14:00.085474,
@@ -825,7 +790,6 @@ the-stinking-rose-san-francisco-7,The Stinking Rose,,,,https://www.yelp.com/biz/
 the-tailors-son-san-francisco,The Tailors Son,moderate_noise,-,5.0,https://www.yelp.com/biz/the-tailors-son-san-francisco,2026-04-22T06:26:09.134985+00:00,
 the-vault-garden-san-francisco-2,The Vault Garden,moderate_noise,$$$,5.0,https://www.yelp.com/biz/the-vault-garden-san-francisco-2,2026-04-22T07:13:49.125520+00:00,
 the-vault-steakhouse-san-francisco-2,The Vault Steakhouse,,$$$$,5.0,https://www.yelp.com/biz/the-vault-steakhouse-san-francisco-2,2026-04-22T06:48:20.789638+00:00,
-THpTY0X,,,,,https://www.yelp.com/biz/THpTY0X,,Failed to fetch
 thriller-country-club-san-francisco,Thriller Country Club,,,,https://www.yelp.com/biz/thriller-country-club-san-francisco,,Failed to fetch
 timber-and-tide-south-san-francisco-3,Timber And Tide,,-,5.0,https://www.yelp.com/biz/timber-and-tide-south-san-francisco-3,2026-04-22T07:15:51.921574+00:00,
 timur-san-francisco,Timur,,-,5.0,https://www.yelp.com/biz/timur-san-francisco,2026-04-22T06:34:34.779219+00:00,
@@ -846,10 +810,8 @@ tsar-nicoulai-caviar-cafe-san-francisco,Tsar Nicoulai Caviar Cafe,,$$$,3.0,https
 tsunami-panhandle-san-francisco-2,Tsunami Panhandle,moderate_noise,-,5.0,https://www.yelp.com/biz/tsunami-panhandle-san-francisco-2,2026-04-22T07:12:21.251698+00:00,
 turquaz-san-francisco,Turquaz,moderate_noise,-,5.0,https://www.yelp.com/biz/turquaz-san-francisco,2026-04-22T06:39:36.326044+00:00,
 turtle-tower-san-francisco-14,Turtle Tower,,,,https://www.yelp.com/biz/turtle-tower-san-francisco-14,,Failed to fetch
-Tz-X63LDt3ucCI-bNN8IWw,Tz X63Ldt3Ucci Bnn8Iww,,-,5.0,https://www.yelp.com/biz/Tz-X63LDt3ucCI-bNN8IWw,2026-04-22T07:31:36.499881+00:00,
 EysiNNTrYaWI6jxKvpk8Dg,Tín On Kearny,,-,5.0,https://www.yelp.com/biz/EysiNNTrYaWI6jxKvpk8Dg,2026-04-22T07:30:13.330353+00:00,
 udon-mugizo-san-francisco-san-francisco-4,Udon Mugizo,moderate_noise,-,5.0,https://www.yelp.com/biz/udon-mugizo-san-francisco-san-francisco-4,2026-04-22T07:23:56.778284+00:00,
-uJQxl8-pdjReMf7zd-wr5w,Ujqxl8 Pdjremf7Zd Wr5W,,-,4.0,https://www.yelp.com/biz/uJQxl8-pdjReMf7zd-wr5w,2026-04-22T07:14:56.287434+00:00,
 ula-restaurant-and-tapas-bar-san-francisco,Ula Restaurant And Tapas Bar,moderate_noise,-,5.0,https://www.yelp.com/biz/ula-restaurant-and-tapas-bar-san-francisco,2026-04-22T06:25:51.153940+00:00,
 um-ma-san-francisco-3,Um Ma,moderate_noise,-,5.0,https://www.yelp.com/biz/um-ma-san-francisco-3,2026-04-22T06:27:26.428080+00:00,
 umi-san-francisco,Umi,moderate_noise,$$,5.0,https://www.yelp.com/biz/umi-san-francisco,2026-04-22T06:37:24.804527+00:00,
@@ -872,16 +834,11 @@ wanjai-restaurant-and-bar-san-francisco-2,Wanjai Restaurant And Bar,,-,5.0,https
 waterbar-san-francisco,Waterbar,moderate_noise,$$$,4.0,https://www.yelp.com/biz/waterbar-san-francisco,2026-04-22T06:49:08.563966+00:00,
 waterfall-san-francisco,Waterfall,,,,https://www.yelp.com/biz/waterfall-san-francisco,,Failed to fetch
 wayfare-tavern-san-francisco-2,Wayfare Tavern,moderate_noise,$$$,5.0,https://www.yelp.com/biz/wayfare-tavern-san-francisco-2,2026-04-22T06:48:33.729457+00:00,
-wEpiKz--Z2b1q,Wepikz  Z2B1Q,,,,https://www.yelp.com/biz/wEpiKz--Z2b1q,,Failed to fetch
-wEpiKz--Z2b1q_FSCCNiow,Wepikz  Z2B1Q_Fsccniow,loud,$$$,3.0,https://www.yelp.com/biz/wEpiKz--Z2b1q_FSCCNiow,2026-04-22T06:49:29.118315+00:00,
 wolfsbane-san-francisco,Wolfsbane,,,,https://www.yelp.com/biz/wolfsbane-san-francisco,,Failed to fetch
 wooden-charcoal-korean-village-barbecue-house-san-francisco,Wooden Charcoal Korean Village Barbecue House,moderate_noise,-,4.0,https://www.yelp.com/biz/wooden-charcoal-korean-village-barbecue-house-san-francisco,2026-04-22T07:11:13.861767+00:00,
 wooden-spoon-san-francisco,Wooden Spoon,moderate_noise,$$,5.0,https://www.yelp.com/biz/wooden-spoon-san-francisco,2026-04-22T06:41:14.833427+00:00,
 woodhouse-fish-san-francisco-4,Woodhouse Fish,moderate_noise,-,5.0,https://www.yelp.com/biz/woodhouse-fish-san-francisco-4,2026-04-22T07:28:21.702555+00:00,
 wooly-pig-san-francisco-2,Wooly Pig,,,,https://www.yelp.com/biz/wooly-pig-san-francisco-2,,Failed to fetch
-x0CorPaOx_2o-Pkwqy-B3Q,X0Corpaox_2O Pkwqy B3Q,,,,https://www.yelp.com/biz/x0CorPaOx_2o-Pkwqy-B3Q,,Failed to fetch
-XcSaf-QyS-QZkgdvX9uT_g,Xcsaf Qys Qzkgdvx9Ut_G,quiet,-,4.0,https://www.yelp.com/biz/XcSaf-QyS-QZkgdvX9uT_g,2026-04-22T07:15:54.030033+00:00,
-xErl0-LbQO9n-5e6ZQQ-Uw,Xerl0 Lbqo9N 5E6Zqq Uw,moderate_noise,-,4.0,https://www.yelp.com/biz/xErl0-LbQO9n-5e6ZQQ-Uw,2026-04-22T07:13:49.299271+00:00,
 xica-san-francisco,Xica,,,,https://www.yelp.com/biz/xica-san-francisco,,Failed to fetch
 yakiniku-shodai-san-francisco,Yakiniku Shodai,quiet,$$$$,5.0,https://www.yelp.com/biz/yakiniku-shodai-san-francisco,2026-04-22T06:46:33.916663+00:00,
 yakiniq-san-francisco-4,Yakiniq,loud,-,4.0,https://www.yelp.com/biz/yakiniq-san-francisco-4,2026-04-22T07:13:20.413761+00:00,
@@ -890,7 +847,6 @@ yank-sing-san-francisco,Yank Sing,moderate_noise,$$$,5.0,https://www.yelp.com/bi
 _L4W57XUxkWdL8BrYeHQVA,Yasijang,,-,4.0,https://www.yelp.com/biz/_L4W57XUxkWdL8BrYeHQVA,2026-04-22T06:50:34.534331+00:00,
 yemeni-san-francisco-3,Yemeni,moderate_noise,$$,5.0,https://www.yelp.com/biz/yemeni-san-francisco-3,2026-04-22T06:50:08.096536+00:00,
 yh-beijing-duck-house-san-francisco-4,Yh Beijing Duck House,moderate_noise,-,4.0,https://www.yelp.com/biz/yh-beijing-duck-house-san-francisco-4,2026-04-22T07:23:25.658580+00:00,
-yo-tambi,,,,,https://www.yelp.com/biz/yo-tambi,,Failed to fetch
 yuanbao-jiaozi-san-francisco-4,Yuanbao Jiaozi,moderate_noise,-,3.0,https://www.yelp.com/biz/yuanbao-jiaozi-san-francisco-4,2026-04-22T07:31:43.755219+00:00,
 yuja-san-francisco,Yuja,,-,5.0,https://www.yelp.com/biz/yuja-san-francisco,2026-04-22T06:39:44.367609+00:00,
 yuji-san-francisco,Yuji,,-,5.0,https://www.yelp.com/biz/yuji-san-francisco,2026-04-22T06:37:49.373954+00:00,
@@ -902,5 +858,4 @@ zevi-cafe-and-bistro-san-francisco,Zevi Cafe And Bistro,,,,https://www.yelp.com/
 zingari-steakhouse-and-pasta-bar-san-francisco,Zingari Steakhouse And Pasta Bar,moderate_noise,$$$,5.0,https://www.yelp.com/biz/zingari-steakhouse-and-pasta-bar-san-francisco,2026-04-22T07:12:32.126494+00:00,
 zitouna-san-francisco-3,Zitouna,,,,https://www.yelp.com/biz/zitouna-san-francisco-3,,Failed to fetch
 zona-rosa-mexican-grill-san-francisco,Zona Rosa Mexican Grill,,-,1.0,https://www.yelp.com/biz/zona-rosa-mexican-grill-san-francisco,2026-04-22T07:15:33.220037+00:00,
-zuni-caf,,,,,https://www.yelp.com/biz/zuni-caf,,Failed to fetch
 zushi-puzzle-san-francisco-2,Zushi Puzzle,moderate_noise,$$$,5.0,https://www.yelp.com/biz/zushi-puzzle-san-francisco-2,2026-04-22T07:11:55.180488+00:00,
