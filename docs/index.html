@@ -3,142 +3,337 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SF Restaurant Noise Levels</title>
+  <title>quiet places</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f0f0f;
-      color: #e0e0e0;
-      padding: 2rem;
+      background: #fefefe;
+      color: #2a2a2a;
       min-height: 100vh;
+      font-weight: 300;
     }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    
     h1 {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: lowercase;
+      margin-bottom: 0.75rem;
+      color: #2a2a2a;
     }
-    .stats {
-      color: #888;
-      margin-bottom: 1.5rem;
-      font-size: 0.9rem;
+    
+    .subtitle {
+      color: #999;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      font-weight: 300;
     }
-    .stats span { 
-      display: inline-block;
-      margin-right: 1.5rem;
-    }
+    
     .filters {
       display: flex;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      margin: 2rem 0 1rem;
     }
+    
     .filter-btn {
-      padding: 0.5rem 1rem;
-      border: 1px solid #333;
-      background: #1a1a1a;
-      color: #aaa;
-      border-radius: 6px;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid #e8e8e8;
+      background: transparent;
+      color: #999;
+      border-radius: 2px;
       cursor: pointer;
-      font-size: 0.85rem;
-      transition: all 0.15s;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      transition: all 0.2s;
     }
-    .filter-btn:hover { border-color: #555; color: #fff; }
-    .filter-btn.active { background: #2a2a2a; border-color: #666; color: #fff; }
+    
+    .filter-btn:hover {
+      border-color: #ccc;
+      color: #666;
+    }
+    
+    .filter-btn.active {
+      border-color: #8b9d83;
+      color: #8b9d83;
+      background: rgba(139, 157, 131, 0.05);
+    }
+    
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    
+    .filter-label {
+      font-size: 0.7rem;
+      color: #bbb;
+      letter-spacing: 0.05em;
+      width: 3rem;
+      text-align: right;
+      margin-right: 0.3rem;
+    }
+    
+    .search-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+    
     .search {
-      padding: 0.6rem 1rem;
-      border: 1px solid #333;
-      background: #1a1a1a;
-      color: #fff;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      width: 220px;
+      width: 100%;
+      max-width: 280px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #e8e8e8;
+      background: transparent;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: #2a2a2a;
+      letter-spacing: 0.02em;
     }
-    .search:focus { outline: none; border-color: #555; }
+    
+    .search:focus {
+      outline: none;
+      border-color: #ccc;
+    }
+    
+    .search::placeholder {
+      color: #bbb;
+    }
+    
+    .count {
+      text-align: center;
+      color: #bbb;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+    }
+    
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1px;
+      background: #e8e8e8;
+      border: 1px solid #e8e8e8;
     }
-    .card {
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 10px;
-      padding: 1rem 1.25rem;
-      transition: border-color 0.15s;
-    }
-    .card:hover { border-color: #444; }
-    .card-name {
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 0.4rem;
-      font-size: 1rem;
-    }
-    .card-name a {
-      color: inherit;
+    
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.9rem 0.8rem;
+      padding-left: 1rem;
+      background: #fefefe;
       text-decoration: none;
+      color: inherit;
+      min-height: 70px;
+      transition: background 0.15s;
+      border-left: 3px solid transparent;
     }
-    .card-name a:hover { text-decoration: underline; }
-    .card-alias {
-      font-size: 0.75rem;
-      color: #666;
-      margin-bottom: 0.6rem;
-      word-break: break-all;
+    
+    .item:hover {
+      background: #fafafa;
     }
-    .noise-badge {
+    
+    .item.level-quiet { border-left-color: #7cb380; }
+    .item.level-moderate { border-left-color: #d4b84a; }
+    .item.level-loud { border-left-color: #cf8b5a; }
+    .item.level-very-loud { border-left-color: #c46b6b; }
+    
+    .item-name {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #2a2a2a;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    
+    .item-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.4rem;
+      font-size: 0.7rem;
+      color: #999;
+    }
+    
+    .item-dots {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+    }
+    
+    .item-details {
+      display: flex;
+      gap: 0.5rem;
+      color: #aaa;
+    }
+    
+    .item-price {
+      color: #7a9a6a;
+    }
+    
+    .item-rating {
+      color: #b8a040;
+    }
+    
+    .item.level-quiet .item-dots { color: #7cb380; }
+    .item.level-moderate .item-dots { color: #d4b84a; }
+    .item.level-loud .item-dots { color: #cf8b5a; }
+    .item.level-very-loud .item-dots { color: #c46b6b; }
+    
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.7rem;
+      color: #999;
+      letter-spacing: 0.05em;
+    }
+    
+    .legend span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    
+    .legend i {
       display: inline-block;
-      padding: 0.25rem 0.6rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
+      width: 12px;
+      height: 3px;
+      border-radius: 1px;
     }
-    .noise-quiet { background: #1a3a1a; color: #6fcf6f; }
-    .noise-moderate_noise { background: #3a3a1a; color: #cfcf6f; }
-    .noise-average { background: #3a3a1a; color: #cfcf6f; }
-    .noise-loud { background: #3a2a1a; color: #cf9f6f; }
-    .noise-very_loud { background: #3a1a1a; color: #cf6f6f; }
-    .noise-none { background: #2a2a2a; color: #666; }
-    .noise-error { background: #2a1a1a; color: #aa5555; }
+    
     .empty {
       grid-column: 1 / -1;
       text-align: center;
-      padding: 3rem;
-      color: #666;
+      padding: 4rem 2rem;
+      color: #ccc;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      background: #fefefe;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #ccc;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+    }
+    
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      color: #888;
+    }
+    
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1rem; }
+      h1 { font-size: 1.25rem; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
     }
   </style>
 </head>
 <body>
-  <h1>SF Restaurant Noise Levels</h1>
-  <div class="stats" id="stats"></div>
-  
-  <div class="filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="quiet">Quiet</button>
-    <button class="filter-btn" data-filter="moderate_noise">Moderate</button>
-    <button class="filter-btn" data-filter="loud">Loud</button>
-    <button class="filter-btn" data-filter="very_loud">Very Loud</button>
-    <button class="filter-btn" data-filter="none">No Data</button>
-    <input type="text" class="search" id="search" placeholder="Search restaurants...">
+  <div class="container">
+    <header>
+      <h1>quiet places</h1>
+      <p class="subtitle">san francisco restaurants where you can hear yourself think</p>
+    </header>
+    
+    <div class="filters">
+      <div class="filter-group">
+        <span class="filter-label">noise</span>
+        <button class="filter-btn active" data-filter="quiet">▁</button>
+        <button class="filter-btn" data-filter="moderate_noise">▁▃</button>
+        <button class="filter-btn" data-filter="loud">▁▃▅</button>
+        <button class="filter-btn" data-filter="very_loud">▁▃▅▇</button>
+        <button class="filter-btn" data-filter="all">all</button>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">price</span>
+        <button class="filter-btn active" data-price="">any</button>
+        <button class="filter-btn" data-price="$">$</button>
+        <button class="filter-btn" data-price="$$">$$</button>
+        <button class="filter-btn" data-price="$$$">$$$</button>
+        <button class="filter-btn" data-price="$$$$">$$$$</button>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">rating</span>
+        <button class="filter-btn active" data-rating="">any</button>
+        <button class="filter-btn" data-rating="3">3+</button>
+        <button class="filter-btn" data-rating="3.5">3.5+</button>
+        <button class="filter-btn" data-rating="4">4+</button>
+        <button class="filter-btn" data-rating="4.5">4.5+</button>
+      </div>
+    </div>
+    
+    <div class="search-wrap">
+      <input type="text" class="search" id="search" placeholder="search">
+    </div>
+    
+    <div class="legend">
+      <span><i style="background:#7cb380"></i> quiet</span>
+      <span><i style="background:#d4b84a"></i> moderate</span>
+      <span><i style="background:#cf8b5a"></i> loud</span>
+      <span><i style="background:#c46b6b"></i> very loud</span>
+    </div>
+    
+    <div class="count" id="count"></div>
+    
+    <div class="grid" id="grid"></div>
+    
+    <footer>
+      data from yelp · <a href="https://github.com/rllin/loudness" target="_blank">source</a>
+    </footer>
   </div>
-  
-  <div class="grid" id="grid"></div>
 
   <script>
     let data = [];
-    let filter = 'all';
+    let filter = 'quiet';
     let search = '';
-
+    let priceFilter = '';
+    let ratingFilter = '';
+    
+    const dots = {
+      quiet: '▁',
+      moderate_noise: '▁▃',
+      average: '▁▃',
+      loud: '▁▃▅',
+      very_loud: '▁▃▅▇'
+    };
+    
     async function loadData() {
-      const resp = await fetch('./sf_loudness.csv');
+      const resp = await fetch('sf_loudness.csv');
       const text = await resp.text();
       const lines = text.trim().split('\n');
       const headers = lines[0].split(',');
       
       data = lines.slice(1).map(line => {
-        // Handle CSV with empty fields properly
         const values = [];
         let current = '';
         let inQuotes = false;
@@ -161,41 +356,22 @@
           obj[h] = values[i] || '';
         });
         return obj;
-      }).filter(d => d.alias);
+      }).filter(d => d.alias && d.noise_level && !d.error);
       
-      updateStats();
       render();
     }
-
-    function updateStats() {
-      const total = data.length;
-      const withNoise = data.filter(d => d.noise_level && !d.error).length;
-      const quiet = data.filter(d => d.noise_level === 'quiet').length;
-      const moderate = data.filter(d => d.noise_level === 'moderate_noise' || d.noise_level === 'average').length;
-      const loud = data.filter(d => d.noise_level === 'loud').length;
-      const veryLoud = data.filter(d => d.noise_level === 'very_loud').length;
-      const errors = data.filter(d => d.error).length;
-      
-      document.getElementById('stats').innerHTML = `
-        <span><strong>${total}</strong> restaurants</span>
-        <span><strong>${withNoise}</strong> with noise data (${Math.round(withNoise/total*100)}%)</span>
-        <span>🤫 ${quiet} quiet</span>
-        <span>🔉 ${moderate} moderate</span>
-        <span>🔊 ${loud} loud</span>
-        <span>📢 ${veryLoud} very loud</span>
-        ${errors ? `<span>⚠️ ${errors} errors</span>` : ''}
-      `;
-    }
-
+    
     function render() {
       const grid = document.getElementById('grid');
       
       let filtered = data;
       
-      if (filter === 'none') {
-        filtered = filtered.filter(d => !d.noise_level && !d.error);
-      } else if (filter !== 'all') {
-        filtered = filtered.filter(d => d.noise_level === filter || (filter === 'moderate_noise' && d.noise_level === 'average'));
+      if (filter !== 'all') {
+        if (filter === 'moderate_noise') {
+          filtered = filtered.filter(d => d.noise_level === 'moderate_noise' || d.noise_level === 'average');
+        } else {
+          filtered = filtered.filter(d => d.noise_level === filter);
+        }
       }
       
       if (search) {
@@ -206,51 +382,81 @@
         );
       }
       
-      // Sort: with noise first, then alphabetically
-      filtered.sort((a, b) => {
-        if (a.noise_level && !b.noise_level) return -1;
-        if (!a.noise_level && b.noise_level) return 1;
-        return (a.name || a.alias).localeCompare(b.name || b.alias);
-      });
+      if (priceFilter) {
+        filtered = filtered.filter(d => d.price === priceFilter);
+      }
+      
+      if (ratingFilter) {
+        const minRating = parseFloat(ratingFilter);
+        filtered = filtered.filter(d => d.rating && parseFloat(d.rating) >= minRating);
+      }
+      
+      filtered.sort((a, b) => (a.name || a.alias).localeCompare(b.name || b.alias));
+      
+      document.getElementById('count').textContent = filtered.length + ' places';
       
       if (filtered.length === 0) {
-        grid.innerHTML = '<div class="empty">No restaurants match your filters</div>';
+        grid.innerHTML = '<div class="empty">no results</div>';
         return;
       }
       
       grid.innerHTML = filtered.map(d => {
-        // Check if alias is a hash (no hyphens except possibly at edges, 15+ chars)
-        const isHash = d.alias.length >= 15 && d.alias.split('-').length <= 2;
-        const name = d.name || (isHash ? 'Unknown Restaurant' : d.alias.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()));
-        const noiseClass = d.error ? 'error' : (d.noise_level || 'none');
-        const noiseLabel = d.error ? 'Error' : (d.noise_level?.replace('_', ' ') || 'No data');
-        const previewUrl = `https://www.yelp.com/biz/${d.alias}?hrid=preview`;
-        const displayAlias = isHash ? `<a href="${previewUrl}" target="_blank">View on Yelp →</a>` : d.alias;
+        const name = d.name || d.alias.replace(/-/g, ' ');
+        const dot = dots[d.noise_level] || '· ·';
+        const yelpUrl = `https://www.yelp.com/biz/${d.alias}`;
+        const levelClass = d.noise_level === 'quiet' ? 'quiet' :
+                          d.noise_level === 'very_loud' ? 'very-loud' :
+                          d.noise_level === 'loud' ? 'loud' : 'moderate';
+        const price = d.price || '';
+        const rating = d.rating ? `★${d.rating}` : '';
         
         return `
-          <div class="card">
-            <div class="card-name"><a href="${previewUrl}" target="_blank">${name}</a></div>
-            <div class="card-alias">${displayAlias}</div>
-            <span class="noise-badge noise-${noiseClass}">${noiseLabel}</span>
-          </div>
+          <a class="item level-${levelClass}" href="${yelpUrl}" target="_blank">
+            <div class="item-name">${name}</div>
+            <div class="item-meta">
+              <span class="item-dots">${dot}</span>
+              <span class="item-details">
+                ${price ? `<span class="item-price">${price}</span>` : ''}
+                ${rating ? `<span class="item-rating">${rating}</span>` : ''}
+              </span>
+            </div>
+          </a>
         `;
       }).join('');
     }
-
-    document.querySelectorAll('.filter-btn').forEach(btn => {
+    
+    document.querySelectorAll('[data-filter]').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         filter = btn.dataset.filter;
         render();
       });
     });
-
+    
+    document.querySelectorAll('[data-price]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-price]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        priceFilter = btn.dataset.price;
+        render();
+      });
+    });
+    
+    document.querySelectorAll('[data-rating]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-rating]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        ratingFilter = btn.dataset.rating;
+        render();
+      });
+    });
+    
     document.getElementById('search').addEventListener('input', e => {
       search = e.target.value;
       render();
     });
-
+    
     loadData();
   </script>
 </body>
