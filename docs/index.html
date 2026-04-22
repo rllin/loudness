@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>quiet places</title>
+  <title>soft tables</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
@@ -218,10 +218,8 @@
     }
     
     .legend i {
-      display: inline-block;
-      width: 12px;
-      height: 3px;
-      border-radius: 1px;
+      font-style: normal;
+      font-size: 0.85rem;
     }
     
     .empty {
@@ -261,18 +259,18 @@
 <body>
   <div class="container">
     <header>
-      <h1>quiet places</h1>
+      <h1>soft tables</h1>
       <p class="subtitle">san francisco restaurants where you can hear yourself think</p>
     </header>
     
     <div class="filters">
       <div class="filter-group">
         <span class="filter-label">noise</span>
-        <button class="filter-btn active" data-filter="quiet">▁</button>
+        <button class="filter-btn active" data-filter="all">any</button>
+        <button class="filter-btn" data-filter="quiet">▁</button>
         <button class="filter-btn" data-filter="moderate_noise">▁▃</button>
         <button class="filter-btn" data-filter="loud">▁▃▅</button>
         <button class="filter-btn" data-filter="very_loud">▁▃▅▇</button>
-        <button class="filter-btn" data-filter="all">all</button>
       </div>
       <div class="filter-group">
         <span class="filter-label">price</span>
@@ -297,10 +295,10 @@
     </div>
     
     <div class="legend">
-      <span><i style="background:#7cb380"></i> quiet</span>
-      <span><i style="background:#d4b84a"></i> moderate</span>
-      <span><i style="background:#cf8b5a"></i> loud</span>
-      <span><i style="background:#c46b6b"></i> very loud</span>
+      <span><i style="color:#7cb380">▁</i> quiet · easy conversation</span>
+      <span><i style="color:#d4b84a">▁▃</i> moderate · comfortable</span>
+      <span><i style="color:#cf8b5a">▁▃▅</i> loud · raise your voice</span>
+      <span><i style="color:#c46b6b">▁▃▅▇</i> very loud · difficult to talk</span>
     </div>
     
     <div class="count" id="count"></div>
@@ -314,7 +312,7 @@
 
   <script>
     let data = [];
-    let filter = 'quiet';
+    let filter = 'all';
     let search = '';
     let priceFilter = '';
     let ratingFilter = '';
@@ -391,7 +389,25 @@
         filtered = filtered.filter(d => d.rating && parseFloat(d.rating) >= minRating);
       }
       
-      filtered.sort((a, b) => (a.name || a.alias).localeCompare(b.name || b.alias));
+      // Sort: rating (high→low), price (expensive→cheap), noise (quiet→loud), alpha
+      const noiseOrder = { quiet: 0, moderate_noise: 1, average: 1, loud: 2, very_loud: 3 };
+      const priceOrder = { '$$$$': 0, '$$$': 1, '$$': 2, '$': 3, '-': 4, '': 5 };
+      filtered.sort((a, b) => {
+        // Rating: highest first
+        const ratingA = parseFloat(a.rating) || 0;
+        const ratingB = parseFloat(b.rating) || 0;
+        if (ratingB !== ratingA) return ratingB - ratingA;
+        // Price: most expensive first
+        const priceA = priceOrder[a.price] ?? 5;
+        const priceB = priceOrder[b.price] ?? 5;
+        if (priceA !== priceB) return priceA - priceB;
+        // Noise: quietest first
+        const noiseA = noiseOrder[a.noise_level] ?? 2;
+        const noiseB = noiseOrder[b.noise_level] ?? 2;
+        if (noiseA !== noiseB) return noiseA - noiseB;
+        // Alphabetical
+        return (a.name || a.alias).localeCompare(b.name || b.alias);
+      });
       
       document.getElementById('count').textContent = filtered.length + ' places';
       

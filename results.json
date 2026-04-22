@@ -1,0 +1,34 @@
+[
+  {
+    "alias": "garaje-san-francisco",
+    "enc_biz_id": "tnhfDv5Il8EaGSXZGiuQGg",
+    "name": "Garaje - San Francisco, CA",
+    "noise_level": "loud",
+    "url": "https://www.yelp.com/biz/garaje-san-francisco",
+    "scraped_at": "2026-04-22T05:58:43.103720"
+  },
+  {
+    "alias": "house-of-prime-rib-san-francisco",
+    "enc_biz_id": "oT08T3Vpn1I7jDmrBBRMTw",
+    "name": "House of Prime Rib - San Francisco, CA",
+    "noise_level": "average",
+    "url": "https://www.yelp.com/biz/house-of-prime-rib-san-francisco",
+    "scraped_at": "2026-04-22T05:58:44.618027"
+  },
+  {
+    "alias": "tartine-bakery-san-francisco",
+    "enc_biz_id": "ri7UUYmx21AgSpRsf4-9QA",
+    "name": "Tartine Bakery - San Francisco, CA",
+    "noise_level": "average",
+    "url": "https://www.yelp.com/biz/tartine-bakery-san-francisco",
+    "scraped_at": "2026-04-22T05:59:01.610038"
+  },
+  {
+    "alias": "zuni-cafe-san-francisco",
+    "enc_biz_id": "oqsu3pKpgRMGHj9QItsx0A",
+    "name": "Zuni Caf\u00e9 - San Francisco, CA",
+    "noise_level": "average",
+    "url": "https://www.yelp.com/biz/zuni-cafe-san-francisco",
+    "scraped_at": "2026-04-22T05:59:06.552156"
+  }
+]

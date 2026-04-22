@@ -1,0 +1,6 @@
+alias,url,name,has_noise_level,noise_level,error
+garaje-san-francisco,https://www.yelp.com/biz/garaje-san-francisco,"Garaje - San Francisco, CA",True,loud,
+house-of-prime-rib-san-francisco,https://www.yelp.com/biz/house-of-prime-rib-san-francisco,"House of Prime Rib - San Francisco, CA",True,moderate_noise,
+tartine-bakery-san-francisco,https://www.yelp.com/biz/tartine-bakery-san-francisco,"Tartine Bakery - San Francisco, CA",True,moderate_noise,
+zuni-cafe-san-francisco,https://www.yelp.com/biz/zuni-cafe-san-francisco,"Zuni Café - San Francisco, CA",True,moderate_noise,
+swan-oyster-depot-san-francisco,https://www.yelp.com/biz/swan-oyster-depot-san-francisco,"Swan Oyster Depot - San Francisco, CA",True,moderate_noise,

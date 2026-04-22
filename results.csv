@@ -1,0 +1,6 @@
+alias,url,name,has_noise_level,noise_level,enc_biz_id,error
+garaje-san-francisco,https://www.yelp.com/biz/garaje-san-francisco,,False,,,HTTP 403
+house-of-prime-rib-san-francisco,https://www.yelp.com/biz/house-of-prime-rib-san-francisco,,False,,,HTTP 403
+tartine-bakery-san-francisco,https://www.yelp.com/biz/tartine-bakery-san-francisco,,False,,,HTTP 403
+zuni-cafe-san-francisco,https://www.yelp.com/biz/zuni-cafe-san-francisco,,False,,,HTTP 403
+swan-oyster-depot-san-francisco,https://www.yelp.com/biz/swan-oyster-depot-san-francisco,,False,,,HTTP 403
